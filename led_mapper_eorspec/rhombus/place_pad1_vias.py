@@ -27,7 +27,7 @@ for fp in board.GetFootprints():
         skipped.append(ref)
         continue
 
-    pad1_pos = pad2.GetPosition()
+    pad1_pos = pad1.GetPosition()
     pad2_pos = pad2.GetPosition()
     net = pad1.GetNet()
 

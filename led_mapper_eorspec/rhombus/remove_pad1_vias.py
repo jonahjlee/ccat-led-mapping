@@ -14,12 +14,12 @@ for fp in board.GetFootprints():
     if not ref.startswith("D"):
         continue
 
-    pad1 = fp.FindPadByNumber("2")
-    if pad1 is None:
+    pad2 = fp.FindPadByNumber("2")
+    if pad2 is None:
         continue
 
-    pad_pos = pad1.GetPosition()
-    net = pad1.GetNetCode()
+    pad_pos = pad2.GetPosition()
+    net = pad2.GetNetCode()
 
     # Find straight track segments with one end exactly at pad 1
     candidate_tracks = [
@@ -45,9 +45,9 @@ for fp in board.GetFootprints():
                 if t.GetNetCode() == net and
                    (t.GetStart() == via.GetPosition() or t.GetEnd() == via.GetPosition())
             ]
-            if len(connected_segments) == 1:
-                tracks_to_delete.append(track)
-                vias_to_delete.append(via)
+            # if len(connected_segments) == 1:
+            tracks_to_delete.append(track)
+            vias_to_delete.append(via)
 
 # Remove duplicates (in case of overlapping matches)
 # tracks_to_delete = list(set(tracks_to_delete))
