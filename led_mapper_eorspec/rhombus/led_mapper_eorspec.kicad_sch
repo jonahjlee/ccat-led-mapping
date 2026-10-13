@@ -824,6 +824,16 @@
 		)
 		(uuid "014737a7-3aab-4694-ade8-cd44a2261aa5")
 	)
+	(bus
+		(pts
+			(xy 139.7 95.25) (xy 139.7 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1295fdd8-635c-4fec-af30-1b2259a73d85")
+	)
 	(wire
 		(pts
 			(xy 101.6 173.99) (xy 102.87 173.99)
@@ -846,7 +856,7 @@
 	)
 	(bus
 		(pts
-			(xy 139.7 95.25) (xy 152.4 95.25)
+			(xy 152.4 95.25) (xy 139.7 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1003,6 +1013,16 @@
 			(type default)
 		)
 		(uuid "608ed46e-82a1-4e15-a7cf-d0e1cbda8600")
+	)
+	(bus
+		(pts
+			(xy 139.7 129.54) (xy 135.89 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85dc7b0a-11cd-4d50-88d6-7d504c3c4769")
 	)
 	(wire
 		(pts
@@ -1594,6 +1614,62 @@
 			(project "led_mapper_eorspec"
 				(path "/51b7e780-688f-494d-9172-4437a593740a"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 40.64 88.9)
+		(size 95.25 46.99)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "76ddcdbd-de4c-41a8-b473-9f82d139a399")
+		(property "Sheetname" "network2"
+			(at 40.64 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "single_net.kicad_sch"
+			(at 40.64 136.4746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P[1..24]" input
+			(at 135.89 129.54 0)
+			(uuid "6f3f255a-1121-4a28-a0d9-28093f6a6f5f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "led_mapper_eorspec"
+				(path "/51b7e780-688f-494d-9172-4437a593740a"
+					(page "3")
 				)
 			)
 		)
