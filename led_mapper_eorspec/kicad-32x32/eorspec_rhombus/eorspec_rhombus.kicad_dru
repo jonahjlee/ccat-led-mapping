@@ -1,0 +1,6 @@
+(version 1)
+
+# JLCPCB: SMD pad to pad clearance (different nets) >= 0.15 mm
+(rule "JLC SMD pad spacing"
+	(constraint clearance (min 0.15))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad'"))
