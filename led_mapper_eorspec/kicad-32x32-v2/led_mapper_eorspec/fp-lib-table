@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "eorspec")(type "KiCad")(uri "${KIPRJMOD}/eorspec.pretty")(options "")(descr "Project footprints"))
+)
